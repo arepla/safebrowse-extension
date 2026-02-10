@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <!-- Background effects -->
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+  
+  <!-- Main container -->
+  <div class="container">
+    <!-- Header with time -->
+    <header class="header">
+      <div class="time-display">
+        <div class="time" id="time">00:00</div>
+        <div class="date" id="date">Loading...</div>
+      </div>
+      <div class="greeting" id="greeting">Welcome</div>
+    </header>
+
+    <!-- Search bar -->
+    <div class="search-container">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput"
+          placeholder="Search or enter URL..."
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <!-- Shortcuts grid -->
+    <div class="shortcuts-section">
+      <div class="shortcuts-header">
+        <h2 class="shortcuts-title">Quick Access</h2>
+        <button class="btn-add" id="addShortcut">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          Add
+        </button>
+      </div>
+      
+      <div class="shortcuts-grid" id="shortcutsGrid">
+        <!-- Shortcuts will be added here dynamically -->
+      </div>
+    </div>
+
+    <!-- Settings button -->
+    <button class="settings-btn" id="settingsBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M12 1v6m0 6v6m-9-9h6m6 0h6M4.22 4.22l4.24 4.24m7.07 7.07l4.24 4.24M19.78 4.22l-4.24 4.24m-7.07 7.07l-4.24 4.24"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Add/Edit Shortcut Modal -->
+  <div class="modal" id="shortcutModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Add Shortcut</h3>
+        <button class="modal-close" id="closeModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-input" id="shortcutName" placeholder="e.g., Gmail">
+        </div>
+        <div class="form-group">
+          <label class="form-label">URL</label>
+          <input type="text" class="form-input" id="shortcutUrl" placeholder="https://mail.google.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Icon (optional emoji or URL)</label>
+          <input type="text" class="form-input" id="shortcutIcon" placeholder="📧 or https://...">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancelBtn">Cancel</button>
+        <button class="btn btn-primary" id="saveBtn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="modal" id="settingsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Settings</h3>
+        <button class="modal-close" id="closeSettings">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="settings-group">
+          <h4 class="settings-subtitle">Features</h4>
+          <label class="toggle-label">
+            <input type="checkbox" id="toggleLinkPreview" class="toggle-input">
+            <span class="toggle-slider"></span>
+            <span class="toggle-text">Link Security Preview</span>
+          </label>
+          <label class="toggle-label">
+            <input type="checkbox" id="togglePip" class="toggle-input">
+            <span class="toggle-slider"></span>
+            <span class="toggle-text">Picture-in-Picture Button</span>
+          </label>
+        </div>
+        <div class="settings-group">
+          <h4 class="settings-subtitle">Appearance</h4>
+          <label class="toggle-label">
+            <input type="checkbox" id="toggle24Hour" class="toggle-input">
+            <span class="toggle-slider"></span>
+            <span class="toggle-text">24-hour Clock</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
