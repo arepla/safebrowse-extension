@@ -260,11 +260,6 @@ copies or substantial portions of the Software.
 
 ---
 
-## 🤝 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/safebrowse-extension/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/safebrowse-extension/discussions)
-- **Email**: support@safebrowse.com
 
 ---
 
