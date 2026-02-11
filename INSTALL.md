@@ -9,7 +9,7 @@
    git clone https://github.com/yourusername/safebrowse-extension.git
    ```
    
-   OR download the [latest release](https://github.com/yourusername/safebrowse-extension/releases) and extract the ZIP file.
+   OR download the ZIP file.
 
 2. **Open Extension Settings**
    - Open Chrome/Edge
