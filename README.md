@@ -132,25 +132,7 @@
 
 ---
 
-## 📸 Screenshots
 
-### Link Security Preview
-![Link Preview](screenshots/link-preview.png)
-*Real-time security analysis when hovering over links*
-
-### Picture-in-Picture
-![PiP Feature](screenshots/pip-feature.png)
-*Watch videos while browsing other sites*
-
-### New Tab Page
-![New Tab](screenshots/newtab.png)
-*Beautiful, customizable new tab with shortcuts and search*
-
-### Settings Panel
-![Settings](screenshots/settings.png)
-*Easy-to-use settings for full customization*
-
----
 
 ## 🛠️ Development
 
